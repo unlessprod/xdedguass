@@ -1,23 +1,89 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 
 <head>
-    <title>sheesh | Graph</title>
-    <script type="4e04db631447933ad55e523f-text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="4e04db631447933ad55e523f-text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-    <script src="graph.js" type="4e04db631447933ad55e523f-text/javascript"></script>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src="https://code.highcharts.com/highcharts.js" type="4e04db631447933ad55e523f-text/javascript"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="https://bitmitigate.com/img/favicon.png" type="image/x-icon" />
+
+    <meta http-equiv="refresh" content="2" />
+    <title>BitMitigate DDoS Protection</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bitmitigate.com/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://bitmitigate.com/css/style.css" />
+    <link rel="stylesheet" href="https://bitmitigate.com/css/responsive.css" />
 </head>
 
 <body>
-    <div class="box">
-        <script src="https://code.highcharts.com/themes/dark-unica.js" type="4e04db631447933ad55e523f-text/javascript"></script>
-        <div id="container">
 
+
+    <header class="header_area">
+        <nav class="navbar navbar-expand-lg menu_one menu_four">
+            <div class="container">
+              <a class="navbar-brand sticky_logo" href="https://bitmitigate.com/#">
+   <img src="https://bitmitigate.com/2x-white.png" srcset="https://bitmitigate.com/1x-white.png 2x" alt="logo">
+   <img src="https://bitmitigate.com/1x.png" srcset="https://bitmitigate.com/2x.png 2x" alt="">
+</a>
+
+            </div>
+        </nav>
+    </header>
+    <section class="error_area">
+        <div class="container flex">
+            <div class="error_contain text-center">
+
+                <h2 class="f_p f_400 w_color f_size_40">Loading...</h2>
+                <p class="w_color f_300">We are checking your browser to make sure you aren't a bot or DDoS attack. This process is completely automatic and will only take a moment. Once it is completed you will be forwarded immediately.</p>
+                <a href="https://bitmitigate.com/" class="about_btn btn-success  btn_hover mt_40">DDoS protection by BitMitigate</a>
+            </div>
         </div>
-    </div>
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="4e04db631447933ad55e523f-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"718aac2b0e199112","version":"2021.12.0","r":1,"token":"adedb850742b49a3a6c7a5335cbcf91d","si":100}' crossorigin="anonymous"></script>
+    </section>
+
+<script>
+
+// cookie.js file
+var cookieToday = new Date();
+var expiryDate = new Date(cookieToday.getTime() + (1000 * 60 * 60)); // 60 minutes
+
+/* Cookie functions originally by Bill Dortsch */
+setCookie("challenge","BitMitigate.com",expiryDate,"/");
+
+
+function setCookie (name,value,expires,path,theDomain,secure) {
+   value = escape(value);
+   var theCookie = name + "=" + value +
+   ((expires)    ? "; expires=" + expires.toGMTString() : "") +
+   ((path)       ? "; path="    + path   : "") +
+   ((theDomain)  ? "; domain="  + theDomain : "") +
+   ((secure)     ? "; secure"            : "");
+   document.cookie = theCookie;
+}
+
+function getCookie(Name) {
+   var search = Name + "="
+   if (document.cookie.length > 0) { // if there are any cookies
+      var offset = document.cookie.indexOf(search)
+      if (offset != -1) { // if cookie exists
+         offset += search.length
+         // set index of beginning of value
+         var end = document.cookie.indexOf(";", offset)
+         // set index of end of cookie value
+         if (end == -1) end = document.cookie.length
+         return unescape(document.cookie.substring(offset, end))
+      }
+   }
+}
+function delCookie(name,path,domain) {
+   if (getCookie(name)) document.cookie = name + "=" +
+      ((path)   ? ";path="   + path   : "") +
+      ((domain) ? ";domain=" + domain : "") +
+      ";expires=Thu, 01-Jan-70 00:00:01 GMT";
+}
+
+
+</script>
 </body>
 
 </html>
